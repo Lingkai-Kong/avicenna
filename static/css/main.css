@@ -100,15 +100,15 @@ h6 {
   color: #330;
   font-weight: 100;
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: -15px;
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -130,7 +130,7 @@ h6 {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 760px;
 }
 
 ul {
@@ -153,7 +153,8 @@ ul.flat li {
 }
 
 .page-title {
-  margin: 0;
+  margin: 100px;
+  padding-left: 1050px;
 }
 
 .smaller {
@@ -189,11 +190,11 @@ ul {
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .header {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   /* padding-bottom: 20px; */
 }
 
@@ -201,13 +202,18 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 30%;
+  max-width: 32%;
   height: auto;
-  border-radius: 50%;
-  /* float: left; */
+  /* border-radius: 50%; */
+  float: left; padding: 10px 40px 20px 3px;
 }
 
-.header h1,
+.header h1 {
+margin-bottom: 1px;
+padding: 0;
+font-size: 2.5rem;
+line-height: 1em;
+}
 .header h2 {
   margin: 0;
   padding: 0;
@@ -216,11 +222,11 @@ ul {
 }
 
 .header h2 {
-  font-size: 1.125rem;
+  font-size: 3rem;
 }
 
 .header nav {
-  margin-top: 20px;
+  margin-top: 0;
   /* border-top: 1px solid #f4f4f4; */
 }
 
@@ -249,10 +255,21 @@ ul {
 
 .header .site-affilation .email {
   /* color: #a00; */
-  font-size: 14px;
+  font-size: 16px;
   display: block;
   font-family: "Ubuntu Mono";
   font-weight: bolder;
+  padding: 0px
+}
+
+
+.header .site-affilation .school {
+  /* color: #a00; */
+  /* font-size: 14px; */
+  /* display: block; */
+  font-family: Ubuntu;
+  margin-bottom: -10px;
+  /* font-weight: bolder; */
 }
 
 .header .site-affilation .position {
@@ -260,16 +277,17 @@ ul {
   /* font-size: 14px; */
   /* display: block; */
   font-family: Ubuntu;
+  margin-bottom: -10px;
   /* font-weight: bolder; */
 }
 
-.header .site-affilation nav {
+.header .site-affilation span {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.header .site-affilation nav ul svg {
+.header .site-affilation span ul svg {
   max-height: 15px;
 }
 
@@ -304,13 +322,19 @@ ul {
 
 .email {
   /* color: #a00; */
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Ubuntu Mono";
   font-weight: bolder;
 }
 
+.conference {
+  font-size: 16px;
+  margin-left: .9em;
+  margin-top: .1em;
+}
+
 .collaborators {
-  font-size: 15px;
+  font-size: 16px;
   margin-left: .9em;
   margin-top: .1em;
 }
@@ -330,13 +354,13 @@ ul {
 
 .code_blog {
     font-family: "Ubuntu Mono";
-    font-size: 14px;
+    font-size: 16px;
     margin: 0em .9em 0em;
 }
 
 .blog_cv {
     font-family: "Ubuntu Mono";
-    font-size: 17px;
+    font-size: 16px;
     /* margin: 0em .9em 0em; */
 }
 
@@ -366,11 +390,15 @@ ul {
 }
 
 .introduction .introduction-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .introduction .introduction-header .title {
   margin: 0;
+}
+
+.introduction h4 {
+  font-size: 1.5em;
 }
 
 .introduction .introduction-header .meta {

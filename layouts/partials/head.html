@@ -4,10 +4,16 @@
 	<div class="site-affilation">
 		<span class="affilation">
 			{{- range $index, $key := .Site.Params.affilation -}}
-			<ul class="flat">
-				<li class="position">{{$key.position}}, {{$key.name}}</li>
+			<!-- <ul class="flat">
+				<li class="position">{{$key.position}}</li>
+				<li class="school">{{ $key.name}}</li>
 				<li class="email">{{ $key.contact}}</li>
-			</ul>
+			</ul> -->
+			<p class = 'position'>{{$key.position}}</p>
+			<p class = 'school'>{{$key.school_name}}</p>
+			<p class = 'school'>{{$key.name}}</p>
+			<p class = 'school'>{{$key.office}}</p>
+			<p class = 'email'>{{$key.contact}}</p>
 			{{- end -}}
 		</span>
 		<!--
@@ -15,8 +21,7 @@
       <h2>{{ .Site.Params.Subtitle | markdownify }}</h2>
       {{- end -}}
     -->
-
-		<nav class="nav social">
+		<span class="social">
 			<ul class="flat">
 				{{- range $index, $key := .Site.Params.Social -}}
 				<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
@@ -26,13 +31,12 @@
 				{{- with .Site.Params.blog -}}
 				<a href="{{ . }}" class="blog_cv">[blog]</a>
 				{{- end -}}
-
 				{{ with .Site.Params.cv_name }}
 				<a href="{{ . }}" class="blog_cv">[cv]</a>
 				{{ end }}
 				{{ end }}
 			</ul>
-		</nav>
+		</span>
 	</div>
 
 	<nav class="nav">
